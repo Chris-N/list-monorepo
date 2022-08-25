@@ -7,8 +7,10 @@
     "build": "nx build",
     "test": "nx test",
     "full": "nx run-many --target=serve --projects=api,list --parallel=true",
-    "frontend": "nx serve list",
-    "backend": "nx serve api"
+    "list": "nx serve list",
+    "api": "nx serve api",
+    "prod-list": "nx run list:build --configuration=production",
+    "prod-api": "nx run api:build --configuration=production"
   },
   "private": true,
   "dependencies": {
