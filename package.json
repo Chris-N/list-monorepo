@@ -5,7 +5,10 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "full": "nx run-many --target=serve --projects=api,list --parallel=true",
+    "frontend": "nx serve list",
+    "backend": "nx serve api"
   },
   "private": true,
   "dependencies": {
