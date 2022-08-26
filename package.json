@@ -4,7 +4,6 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "build": "nx build",
     "test": "nx test",
     "full": "nx run-many --target=serve --projects=api,list --parallel=true",
     "list": "nx serve list",
